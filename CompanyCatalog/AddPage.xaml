@@ -1,0 +1,141 @@
+﻿<Page x:Class="CompanyCatalog.AddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CompanyCatalog"
+      mc:Ignorable="d" 
+      d:DesignHeight="405" d:DesignWidth="655"
+      Title="Add">
+
+    <Grid>
+        <Label Content="Add Company" 
+               FontWeight="DemiBold"
+               FontSize="16"
+               HorizontalAlignment="Center" 
+               Height="40" 
+               Foreground="WhiteSmoke"
+               Style="{DynamicResource CaptureIt}"
+               VerticalAlignment="Top"/>
+        <Label
+            Content="Company Name" 
+            HorizontalAlignment="Left" 
+            Margin="150,100,0,0"
+            VerticalAlignment="Top" 
+            Height="25" 
+            Width="118"
+            Foreground="WhiteSmoke"
+            Style="{DynamicResource CaptureIt}"/>
+        <TextBox
+            x:Name="CompanyName_TBox"
+            HorizontalAlignment="Left"
+            Height="20"
+            Margin="350,100,0,0"
+            TextWrapping="Wrap"
+            Text="Enter Company Name"
+            FontStyle="Italic"
+            FontWeight="Light"
+            VerticalAlignment="Top"
+            Width="180"
+            GotFocus="CompanyName_GotFocus"/>
+        <Label
+            Content="Company Address"
+            HorizontalAlignment="Left"
+            Margin="150,150,0,0" 
+            VerticalAlignment="Top"
+            Foreground="WhiteSmoke"
+            Style="{DynamicResource CaptureIt}"/>
+        <TextBox 
+            x:Name="CompanyAddress_TBox"
+            HorizontalAlignment="Left"
+            Height="20"
+            Margin="350,150,0,0" 
+            Text="Enter Company Address"
+            FontStyle="Italic"
+            FontWeight="Light"
+            VerticalAlignment="Top"
+            Width="180"
+            GotFocus="CompanyAddress_GotFocus"/>
+        <Label 
+            Content="Foundation Year"
+            HorizontalAlignment="Left"
+            Margin="150,200,0,0" 
+            VerticalAlignment="Top"
+            Foreground="WhiteSmoke"
+            Style="{DynamicResource CaptureIt}"/>
+        <TextBox
+            x:Name="FoundationYear_TBox"
+            HorizontalAlignment="Left"
+            Height="20"
+            Margin="350,200,0,0"
+            TextWrapping="Wrap"
+            Text="Enter Foundation Year"
+            FontStyle="Italic"
+            FontWeight="Light"
+            VerticalAlignment="Top"
+            Width="120"
+            GotFocus="FoundationYear_GotFocus"/>
+        <Label
+            Content="Annual Revenue" 
+            HorizontalAlignment="Left"
+            Margin="150,250,0,0" 
+            VerticalAlignment="Top"
+            Foreground="WhiteSmoke"
+            Style="{DynamicResource CaptureIt}"/>
+        <TextBox
+            x:Name="AnnualRevenue_TBox"
+            HorizontalAlignment="Left"
+            Height="20"
+            Margin="350,250,0,0"
+            TextWrapping="Wrap"
+            Text="Enter Annual Revenue"
+            FontStyle="Italic"
+            FontWeight="Light"
+            VerticalAlignment="Top"
+            Width="120"
+            GotFocus="AnnualRevenue_GotFocus"/>
+        <Label
+            Content="Business Type" 
+            HorizontalAlignment="Left"
+            Margin="150,300,0,0" 
+            VerticalAlignment="Top"
+            Foreground="WhiteSmoke"
+            Style="{DynamicResource CaptureIt}"/>
+        <ComboBox 
+            x:Name="BusinessType_TBox"
+            HorizontalAlignment="Left" 
+            Margin="350,300,0,0" 
+            VerticalAlignment="Top" 
+            Width="120"
+            GotFocus="BusinessType_GotFocus" SelectionChanged="BusinessType_TBox_SelectionChanged">
+            <TextBlock>private</TextBlock>
+            <TextBlock>public</TextBlock>
+            <TextBlock>non-profit</TextBlock>
+            <TextBlock>venture capital</TextBlock>
+        </ComboBox>
+        <Button 
+            x:Name="AddBtn"
+            Content="Add"
+            HorizontalAlignment="Center"
+            Margin="0,350,0,0"
+            VerticalAlignment="Top"
+            Width="100"
+            Height="20"
+            Foreground="WhiteSmoke"
+            Background="#13242C"
+            Style="{DynamicResource CaptureIt}"
+            Click="AddBtn_Click" RenderTransformOrigin="0.476,2.96"/>
+        <Button
+            x:Name="backBtn"
+            Style="{DynamicResource CircleShapeButtonStyle}"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Width="25"
+            Height="25"
+            Margin="40,40,0,0"
+            Click="backBtn_Click">
+            <Image Source="Assets/back.png"/>
+        </Button>
+
+    </Grid>
+</Page>
