@@ -12,4 +12,4 @@
 
   iii. Перейдіть до Settings.settings
 
-  iv. Вста
+  iv. Вставте Name  як 'connString', Type as (Connection String), Scope as Application and Value as Connection String of Database
