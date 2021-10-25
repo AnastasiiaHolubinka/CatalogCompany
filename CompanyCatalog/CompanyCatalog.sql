@@ -7,11 +7,11 @@ USE CompanyCatalog
 GO
 
 CREATE TABLE [dbo].Company (
-    [Id]					INT IDENTITY (1, 1) NOT NULL,
+    [Id]				INT IDENTITY (1, 1) NOT NULL,
     [CompanyName]			VARCHAR (40)  NOT NULL,
-	[CompanyAddress]        VARCHAR (100)  NOT NULL,
-    [FoundationYear]		INT           NOT NULL,
-	[AnnualRevenue]			INT           NOT NULL,
+    [CompanyAddress]        		VARCHAR (100)  NOT NULL,
+    [FoundationYear]			INT           NOT NULL,
+    [AnnualRevenue]			INT           NOT NULL,
     [BusinessType]			VARCHAR (100) NOT NULL,
 
     PRIMARY KEY CLUSTERED ([Id] ASC),
